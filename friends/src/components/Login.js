@@ -36,6 +36,7 @@ class Login extends React.Component {
         return(
             <div>
                 <Form onSubmit={this.login}>
+                    <h2>~Login~</h2>
                     <label>Name: 
                         <Input
                             type='text'
@@ -53,7 +54,7 @@ class Login extends React.Component {
                         onChange={this.handleChange}
                     />
                     </label> */}
-                    
+
                     <label>Email:
                     <Input
                         type='text'

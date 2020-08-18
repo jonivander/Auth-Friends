@@ -4,7 +4,6 @@ import { Navbar, Nav, NavItem } from 'reactstrap';
 import Login from './components/Login';
 import Friends from './components/Friends';
 import PrivateRoute from './components/PrivateRoute';
-import FriendForm from './components/AddFriend';
 
 
 import './App.css';
@@ -26,7 +25,6 @@ function App() {
         <Switch>
           <PrivateRoute path='/protected' component={Friends} />
           <Route path='/login' component={Login} />
-          <Route path='/addFriend' component={AddFriend} /> 
           <Route>
             <Login />
           </Route>
