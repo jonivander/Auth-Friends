@@ -1,4 +1,5 @@
 import React from 'react';
+import { Form, Input, Button } from 'reactstrap'; 
 
 import { axiosWithAuth } from '../utils/axiosWithAuth'; 
 
@@ -34,27 +35,35 @@ class Login extends React.Component {
     render() {
         return(
             <div>
-                <form onSubmit={this.login}>
-                    <input
-                        type='text'
-                        name='name'
-                        value={this.state.credentials.name}
-                        onChange={this.handleChange}
-                    />
-                    <input
+                <Form onSubmit={this.login}>
+                    <label>Name: 
+                        <Input
+                            type='text'
+                            name='name'
+                            value={this.state.credentials.name}
+                            onChange={this.handleChange}
+                        />
+                    </label>
+
+                    {/* <label>Age: 
+                    <Input
                         type='text'
                         name='age'
                         value={this.state.credentials.age}
                         onChange={this.handleChange}
                     />
-                    <input
+                    </label> */}
+                    
+                    <label>Email:
+                    <Input
                         type='text'
                         name='email'
                         value={this.state.credentials.email}
                         onChange={this.handleChange}
                     />
-                    <button>Log in</button>
-                </form>
+                    </label>
+                    <Button color='info'>Log in</Button>
+                </Form>
             </div>
         )
     }
