@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+Form {
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+  margin-top: 5vh; 
+  padding: 5vh; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
